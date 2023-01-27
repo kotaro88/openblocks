@@ -7,9 +7,9 @@ spring:
     mongodb:
       authentication-database: admin
       auto-index-creation: false
-      uri: mongodb://localhost:27017/openblocks?socketTimeoutMS=5000
+      uri: mongodb://console.xdify.vn:27017/openblocks?socketTimeoutMS=5000
   redis:
-    url: redis://localhost:6379
+    url: redis://console.xdify.vn:6379
   main:
     allow-bean-definition-overriding: true
     allow-circular-references: true
@@ -34,7 +34,7 @@ common:
   cloud: true
   security:
     cors-allowed-domains:
-      - '*'
+      - "*"
   version: 1.1.4
   block-hound-enable: false
 
