@@ -3,9 +3,9 @@ services:
   openblocks:
     image: openblocksdev/openblocks-ce
     container_name: openblocks
-    environment:
-      - MONGODB_URI=mongodb://console.xdify.vn:27017/openblocks?socketTimeoutMS=5000
-      - REDIS_URI=redis://console.xdify.vn:6379
+    # environment:
+    #   - MONGODB_URI=mongodb://console.xdify.vn:27017/openblocks?socketTimeoutMS=5000
+    #   - REDIS_URI=redis://console.xdify.vn:6379
     ports:
       - "3000:3000"
     volumes:
